@@ -44,7 +44,9 @@ def main() -> None:
         for word in map(str.lower, filter(lambda w: len(w) > 2, line.split())):
             rev = ''.join(reversed(word[1:] + word[0]))
             if word == rev:
-                print(word)
+                if word not in seen:
+                    print(word)
+                    seen.add(word)
 
 
 # --------------------------------------------------
