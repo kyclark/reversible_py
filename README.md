@@ -21,7 +21,7 @@ For example, given this file:
 $ cat test.txt
 weasels
 banana
-rippped
+ripped
 dresser
 my
 grammar
